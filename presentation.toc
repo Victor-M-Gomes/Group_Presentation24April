@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Our set-up}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{General view}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Automation}{2}{0}{1}

@@ -1,0 +1,48 @@
+\defbeamertemplate*{title page}{lfcr}
+{ 
+  \begin{beamercolorbox}[ht=2cm,wd=\paperwidth, center, sep=.2cm]{my thing}
+ 	{%
+     \begin{center}
+     \begin{figure}
+	~~~%
+	\includegraphics[height=0.8cm,keepaspectratio]{LogoUPPAcouleurCMJN}~~~%	
+	\includegraphics[height=0.8cm,keepaspectratio]{logo-cnrs}~~~%
+	\includegraphics[height=0.8cm,keepaspectratio]{Logo_total_haut}~~~%
+	\includegraphics[height=0.8cm,keepaspectratio]{e2slogo}~~~%
+	\includegraphics[height=0.8cm,keepaspectratio]{institut_carnot_logo}~~~%
+	\includegraphics[height=0.8cm,keepaspectratio]{inr_logo_rouge_rvb}~~~%	
+     \end{figure}
+     \end{center}
+    }
+  \end{beamercolorbox}%
+  \vskip0pt plus 1filll % see beamerusersguide
+  %
+  \begin{centering} % some Text Macros
+ 	\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle %
+	\ifx\inserttitle\@empty%
+	   {}
+	   \else%
+	   {\vskip0.5cm}
+	   \fi
+  	\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle %
+	\ifx\insertsubtitle\@empty%
+	   {}
+	   \else%
+	   {\vskip0.5cm}
+	   \fi
+ 	\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor %
+	\ifx\insertauthor\@empty%
+	   {}
+	   \else%
+	   {\vskip0.5cm}
+	   \fi
+   	\inserttitlegraphic%
+  \end{centering}
+  \vskip0pt plus 1filll % again tantau magical
+  \leavevmode 
+  \ifx\inserttitlegraphic\@empty%
+	{}
+	\else%
+	{\vskip0.5cm}
+	\fi
+}

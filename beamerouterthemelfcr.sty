@@ -1,0 +1,93 @@
+\def\logo{%
+  \includegraphics[height=0.4cm,keepaspectratio]{LogoUPPAcouleurCMJN}~%	
+  \includegraphics[height=0.4cm,keepaspectratio]{logo-cnrs}~%
+  \includegraphics[height=0.4cm,keepaspectratio]{Logo_total_haut}~%
+  \includegraphics[height=0.4cm,keepaspectratio]{e2slogo}~%
+  \includegraphics[height=0.4cm,keepaspectratio]{institut_carnot_logo}~%
+  \includegraphics[height=0.4cm,keepaspectratio]{inr_logo_rouge_rvb}~%	
+}
+
+\setbeamertemplate{navigation symbols}
+{%
+  \vspace*{9.5cm}
+  \hbox{%
+  \hbox{\insertslidenavigationsymbol}
+  \hbox{\insertframenavigationsymbol}
+  \hbox{\insertsubsectionnavigationsymbol}
+  \hbox{\insertsectionnavigationsymbol}
+  \hbox{\insertdocnavigationsymbol}
+  \hbox{\insertbackfindforwardnavigationsymbol}}%
+}
+
+\def\ps@navigation@titlepage{%
+  \setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth, ht=2cm, sep=.0cm]{section in foot}
+    \begin{tikzpicture}
+		\useasboundingbox(0,0) rectangle(\the\paperwidth,4);
+		{
+    		\filldraw[draw=white,fill=myblue] (-0.1,4) -- (-0.1,0) -- (19,0) -- (19,3.5);
+		\node[anchor= west, align=center] at (0.5,2.5){\usebeamerfont{date}\usebeamercolor[fg]{date} \bf R\'{e}union d'\'{e}quipe \\ \usebeamerfont{date}\usebeamercolor[fg]{date} \bf << CHICkPEA >>};
+         	\node[anchor= east] at (12,2. 5){\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate};	
+		}
+   		\end{tikzpicture}
+  \end{beamercolorbox}%
+} 
+  \@nameuse{ps@navigation}}
+\addtobeamertemplate{title page}{\thispagestyle{navigation@titlepage}}{}
+%
+
+% Frame title
+\defbeamertemplate*{frametitle}{lfcr}[1][]{
+    \begin{beamercolorbox}[wd=\paperwidth, ht=1.2cm]{frametitle} 
+       \begin{tikzpicture}
+	   \useasboundingbox(0,0) rectangle(\the\paperwidth,1.5);
+	   {
+    	   \filldraw[preaction={fill=black,opacity=.4,transform canvas={xshift=0.0mm,yshift=-0.5mm}}][draw=white,fill=myblue] (-0.1,0) -- (-0.1,1.5) -- (19,1.5) -- (19,0.5);
+	   \draw[fill=white, ultra thick, white] (12.125,0.75) rectangle(12.625,1);
+	   \node at (12.375,0.875){\textcolor{myblue}{\tiny\insertframenumber/\inserttotalframenumber}};
+	   \ifx\insertframesubtitle\@empty%
+        		{\node[anchor=west] at (0.3,0.61){\usebeamerfont{frametitle}\insertframetitle};}
+        		\else%
+        		{\node[anchor= west] at (0.2,0.81){\usebeamerfont{frametitle}\insertframetitle};%
+         		\node[anchor= west] at (0.2,0.45){\usebeamerfont{framesubtitle} \insertframesubtitle};}%
+        		\fi
+	   }
+       \end{tikzpicture}
+    \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{%
+  \begin{minipage}[t]{\paperwidth}
+    \ifnum\thepage>1\relax% 
+%    \hfill
+	    \ifnum\insertframenumber=\inserttotalframenumber\relax%
+%		\vspace*{-1.5cm}	
+		\begin{center}
+	     	\begin{tikzpicture} %If using figure environ, shows page number (!)
+			\useasboundingbox(0,0) rectangle(\the\paperwidth,1);
+			\node[anchor=west] at (0.375,1.5){
+			~~~%
+			\includegraphics[height=0.8cm,keepaspectratio]{LogoUPPAcouleurCMJN}~~~%	
+			\includegraphics[height=0.8cm,keepaspectratio]{logo-cnrs}~~~%
+			\includegraphics[height=0.8cm,keepaspectratio]{Logo_total_haut}~~~%
+			\includegraphics[height=0.8cm,keepaspectratio]{e2slogo}~~~%
+			\includegraphics[height=0.8cm,keepaspectratio]{institut_carnot_logo}~~~%
+			\includegraphics[height=0.8cm,keepaspectratio]{inr_logo_rouge_rvb}~~~%	
+				};
+		\end{tikzpicture}
+		\end{center}	
+	    \else
+	    \begin{beamercolorbox}[wd=5cm, ht = 0cm]{page number in head/foot}
+		\hspace*{-0.25cm}
+		\begin{tikzpicture}%[line width=1.5pt]
+			\useasboundingbox(0,0) rectangle(\the\paperwidth,1);
+			{
+			\draw[preaction={draw=mongris6, very thick,transform canvas={xshift=0.0mm,yshift=-0.25mm}}][myblue,very thick] (0.4,0.5) -- (\the\paperwidth,0.5);
+			\node[anchor=west] at (0.375,0.5){\logo};
+			}
+		\end{tikzpicture}
+	    \end{beamercolorbox}
+	    \fi
+    \fi
+  \end{minipage}
+}
