@@ -11,6 +11,8 @@ all:
 	$(BUILDTEX)
 	$(BUILDTEX)
 	mv ./$(PROJECT).pdf ./$(FILE).pdf
+	# Move log files to tmp
+	mv -u -v *.log *.bak *.aux *.bbl *.blg *.idx *.nav *.toc *.out *.snm tmp/
 
 xelatex:
 	$(BUILDTEX)
