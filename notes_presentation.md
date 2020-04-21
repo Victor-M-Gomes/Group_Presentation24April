@@ -1,17 +1,19 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">\_Experimental research on the Seismoelectric interface wave</span>](#orgb14d738)
-2.  [Presentation planning:](#org0e1f0b5)
+1.  [Title: <span class="underline">Report of the ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgff2e7a5)
+2.  [Presentation planning:](#org7dffd27)
+3.  [Notes:](#org62488f0)
+    1.  [Cables:](#org5b77783)
 
 
 
-<a id="orgb14d738"></a>
+<a id="orgff2e7a5"></a>
 
-# Title: <span class="underline">\_Experimental research on the Seismoelectric interface wave</span>
+# Title: <span class="underline">Report of the ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org0e1f0b5"></a>
+<a id="org7dffd27"></a>
 
 # Presentation planning:
 
@@ -40,4 +42,26 @@
     -   Tests yet to be done (Sensitivity to layer response)
     -   Perspectives with the new set-up
 -   Final planning                                                                     #:TODO
+
+
+<a id="org62488f0"></a>
+
+# Notes:
+
+
+<a id="org5b77783"></a>
+
+## Cables:
+
+-   Coaxial: inner conductor surrounded by a concentric conducting shield and
+    separated by a dielectric.
+    -   BNC: Bayonet Neill-Concelman
+-   SPI (Serial Peripheral Interface)
+    -   Master&#x2013;multi slave
+    -   Two data and two signal lines:
+        -   MOSI (Master out slave in): master sends data to slave
+        -   MISO (Master in slave out): Slave sends data to master
+        -   SCK (SPI serial clock): Clock signal
+        -   SS (Slave select): Individually select slave / Chip select
+    -   Connected to GPIO pins
 
