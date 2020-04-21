@@ -4,6 +4,7 @@
 *.nav
 *.toc
 *.aux
+*.org
 tmp/
 
 
