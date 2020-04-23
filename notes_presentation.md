@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org44a8e7f)
-2.  [Presentation planning:](#org66a3b60)
-3.  [Notes:](#org8223aec)
-    1.  [Cables:](#orgf777b26)
-    2.  [Intro/Motivation:](#org56c323e)
-    3.  [Experiments - What has been done:](#org714f177)
-    4.  [Where am I at?](#orge8a876a)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgf283b5d)
+2.  [Presentation planning:](#org1a4cc24)
+3.  [Notes:](#orge1a899b)
+    1.  [Cables:](#orgcd8d24c)
+    2.  [Intro/Motivation:](#org3af7dc8)
+    3.  [Experiments - What has been done:](#org113f301)
+    4.  [Where am I at?](#org5500663)
 
 
 
-<a id="org44a8e7f"></a>
+<a id="orgf283b5d"></a>
 
 # Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org66a3b60"></a>
+<a id="org1a4cc24"></a>
 
 # Presentation planning:
 
@@ -37,23 +37,23 @@
         *Heating rock might close pores*
     -   [ ] Change wetting fluid
         *Encase rock in /&mu;/m plastic film to seal fluid in*
--   Where am I at?                                                                     #:STARTED
+-   Where am I at?                                                                     #:DONE
     -   [X] Illustrate new set-up and equipments
     -   [X] Electric acquisition automation
-    -   [ ] Validation of new acquisition set-up
-    -   [ ] Planning
-    -   [ ] Illustrate problems encountered
-    -   [ ] Tests yet to be done (Sensitivity to layer response)
-    -   [ ] Perspectives with the new set-up
+    -   [X] Validation of new acquisition set-up
+    -   [X] Illustrate problems encountered
+    -   [X] Planning (automation and validation)
+    -   [X] Tests yet to be done (Sensitivity to layer response)
+    -   [X] Perspectives with the new set-up
 -   Final planning                                                                     #:TODO
 
 
-<a id="org8223aec"></a>
+<a id="orge1a899b"></a>
 
 # Notes:
 
 
-<a id="orgf777b26"></a>
+<a id="orgcd8d24c"></a>
 
 ## Cables:
 
@@ -70,7 +70,7 @@
     -   Connected to GPIO pins
 
 
-<a id="org56c323e"></a>
+<a id="org3af7dc8"></a>
 
 ## Intro/Motivation:
 
@@ -83,7 +83,7 @@
 -   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
 
 
-<a id="org714f177"></a>
+<a id="org113f301"></a>
 
 ## Experiments - What has been done:
 
@@ -124,7 +124,7 @@
     -   It was seen that lengths down to &lambda;/6 could be identified.
 
 
-<a id="orge8a876a"></a>
+<a id="org5500663"></a>
 
 ## Where am I at?
 
@@ -146,4 +146,5 @@
         -   Testing the card: Test the signal recorded when using the electronic card, how it looked and if there were any problems.
             
             As a matter of fact there were a lot of electromagnetic noise (&asymp; 85 MHz) making the whole record noisy, what could severely affect my future measurements. Thus I had to seek the source of the problem. After much inspection, we all agreed that the source was the switching regulator (*that transforms the input voltage and current to desired values*). Indeed, after properly removing it from the card, the EM noise disappeared.
+        -   Testing electrodes: The max amplitude measured with each electrode of every comb was analysed. Some electrodes did not have a consistent amplitude value. Using a multimeter I realized a continuity test in each electrode. From them I concluded the problem is in the connection between some electrodes and the golden part connecting them to the electronic card. They are possibly not touching sufficiently to allow current to pass since no continuity was seen. Problem not yet solved. (*Short comb: 9,24,26,27 and 31*; *Long comb: 2,5,7,18 and 24*)
 

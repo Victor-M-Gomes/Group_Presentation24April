@@ -317,6 +317,21 @@
 \section{Where am I at?}
 \subsection{General view}
 \begin{frame}{New experimental set-up}
+
+  \begin{itemize}
+    \item Conceived thanks to Federico
+    \item With the help of Clarice and Daniel
+  \end{itemize}
+
+  \begin{center}
+    \includegraphics[width=0.32\textwidth]{Smallcombs_2.PNG}
+    \includegraphics[width=0.32\textwidth]{Smallcombs_1.PNG}
+    \includegraphics[width=0.32\textwidth]{Bigcomb.PNG}
+  \end{center}
+ 
+\end{frame}
+%
+\begin{frame}{New experimental set-up}
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \textbf{Acoustic-related}
@@ -430,23 +445,57 @@
   \end{columns}
 
 \end{frame}
+%
+\begin{frame}{Validation}
+  {EM-related}
+  \textbf{Testing the card}
 
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\textwidth]{After_HFnoise_norelayopen.pdf}
+      \includegraphics[width=\textwidth]{After_HFnoise_relayopen.pdf}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\textwidth]{After_HFnoise_ampspec1.pdf}
+      \includegraphics[width=\textwidth]{After_HFnoise_ampspec2.pdf}
+    \end{column}
+  \end{columns}
 
+\end{frame}
+%
+\begin{frame}{Validation}
+  {EM-related}
+  \textbf{Testing electrodes}
+  \begin{center}
+    \includegraphics[width=0.475\textwidth]{maxperdriverrelay.pdf}
+    \includegraphics[width=0.475\textwidth]{ampperelectrode.pdf}
+  \end{center}
+ 
+\end{frame}
+%
+\begin{frame}{Validation}
+  {EM-related}
+  \textbf{Testing electrodes}
 
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Some defectuous electrodes in two combs
+        \item Long comb (2,5,7,18 and 24)
+        \item Short comb (9,24,26,27 and 31)
+        \item Not yet solved
+      \end{itemize}
+    \end{column}
+    \begin{column}{\textwidth}
+        \includegraphics[width=0.5\textwidth]{peigne_long.jpg}
+    \end{column}
+  \end{columns}
 
-
-
-
-
-
-
-
-
-
-
-
+\end{frame}
+%
 %%%%
-\begin{frame}{Automation Planning}
+\subsection{Planning validation and automation}
+\begin{frame}{Automation and validation Planning}
   \textbf{From: 2020-01-30 until 2020-03-13}
 
   \vspace*{0.5cm}
@@ -487,7 +536,7 @@
   \end{itemize}
 \end{frame}
 %
-\begin{frame}{Automation Planning}
+\begin{frame}{Automation and validation Planning}
   \textbf{Today}
 
   \vspace*{0.5cm}
@@ -524,48 +573,41 @@
       \ganttlinkedbar[name=eletr,
       progress=50]{Electrodes}{2020-03-02}{2020-03-16}\\
       \ganttbar[name=lasa
-      progress=100]{Acoustic}{2020-01-30}{2020-03-13} \\
+      progress=50]{Acoustic}{2020-01-30}{2020-03-13} \\
       \ganttbar[name=tav,
       progress=85]{Tests and vali.}{2020-01-30}{2020-04-24} \\
 	\end{ganttchart}
   }
 
 \end{frame}%
-\begin{frame}{Automation Planning}
-  \textbf{Points:}
-  \begin{itemize}
-    \item {Oscilloscope connection has no easy-to-use user interface.
-      Possibility of bugs I have not yet seen.}
-    \item {Control over GPIO pins works but SPI is not quite clear.
-      \begin{itemize}
-        \item {The right cable config.}
-        \item {What 8-bit message do I send to change drivers/relays.}
-      \end{itemize}}
-    \item {Oscilloscope control could be done with LabView to make it easier.}
-  \end{itemize}
-\end{frame}
 %
-\begin{frame}{Tests to be performed}
+\begin{frame}{Tests yet to be performed}
   \begin{itemize}
-    \item Check if all relays work properly - \textcolor{blue}{DONE}
-    \item Test box attenuation/plastic velocity/etc \textcolor{blue}{ONGOING}
-    \item Water-filled box with dipole source to check electrodes' beahviour to
-      electromagnetic sources
+    \item {Test box attenuation/plastic velocity/etc \textcolor{blue}{ONGOING}
+      \begin{itemize}
+        \item Better characterize measurements
+          \item More measurements
+      \end{itemize}
+      }
     \item Sand-filled box
     \item Sensitivity to the Layer response
+    \item Check for improvements (acoustic and electric-wise) from previous experiment
   \end{itemize}
 \end{frame}
 %
+\subsection{Perspectives}
 \begin{frame}{Perspectives to new experimentl setup}
   \textbf{General:}
   \begin{enumerate}
-    \item Greater SNR;
+    \item Greater SNR
     \item Faster acquisition
     \item Greater spatial precision of electric measurements due to more rigid
-      electrodes;
-    \item Ensure repeatability;
-    \item More precision when studying the converted wave.
+      electrodes
+    \item Ensure repeatability
+    \item More precision when studying the converted wave
   \end{enumerate}
+
+ \visible<2>{\textbf{In the end: A robust and easily reproducible seismoelectric experiment.}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
