@@ -1,21 +1,22 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org427d6f7)
-2.  [Presentation planning:](#org59afc09)
-3.  [Notes:](#orge2d10fa)
-    1.  [Cables:](#orge2a9fc1)
-    2.  [Intro/Motivation:](#org7057eaf)
-    3.  [Experiments - What has been done:](#org32be095)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org44a8e7f)
+2.  [Presentation planning:](#org66a3b60)
+3.  [Notes:](#org8223aec)
+    1.  [Cables:](#orgf777b26)
+    2.  [Intro/Motivation:](#org56c323e)
+    3.  [Experiments - What has been done:](#org714f177)
+    4.  [Where am I at?](#orge8a876a)
 
 
 
-<a id="org427d6f7"></a>
+<a id="org44a8e7f"></a>
 
 # Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org59afc09"></a>
+<a id="org66a3b60"></a>
 
 # Presentation planning:
 
@@ -37,7 +38,7 @@
     -   [ ] Change wetting fluid
         *Encase rock in /&mu;/m plastic film to seal fluid in*
 -   Where am I at?                                                                     #:STARTED
-    -   [ ] Illustrate new set-up and equipments
+    -   [X] Illustrate new set-up and equipments
     -   [X] Electric acquisition automation
     -   [ ] Validation of new acquisition set-up
     -   [ ] Planning
@@ -47,12 +48,12 @@
 -   Final planning                                                                     #:TODO
 
 
-<a id="orge2d10fa"></a>
+<a id="org8223aec"></a>
 
 # Notes:
 
 
-<a id="orge2a9fc1"></a>
+<a id="orgf777b26"></a>
 
 ## Cables:
 
@@ -69,7 +70,7 @@
     -   Connected to GPIO pins
 
 
-<a id="org7057eaf"></a>
+<a id="org56c323e"></a>
 
 ## Intro/Motivation:
 
@@ -82,7 +83,7 @@
 -   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
 
 
-<a id="org32be095"></a>
+<a id="org714f177"></a>
 
 ## Experiments - What has been done:
 
@@ -121,4 +122,28 @@
         -   Excitation Frequency
     -   For the thickness experiment, using 300kHz and &lambda; &asymp; 7mm it is not seen the thin-layer effect when reducing the thickness to values smaller than the wavelength.
     -   It was seen that lengths down to &lambda;/6 could be identified.
+
+
+<a id="orge8a876a"></a>
+
+## Where am I at?
+
+-   New experimental set-up:
+    Additions focusing in increase the signal-to-noise ratio, thus in reducing both acoustic and electromagnetic noise.
+    -   Acoustic:
+        -   Thor-labs equipments to reduce influence of vibrations from sources other than the piezo.
+        -   Also, a support that allows the piezo to be firmly pressed against the sandbox.
+        -   The sandbox was also changed, now it is longer in length and height, changes were made to allow measurements farther from source than before. *It is still to be checked if it will allow for time shifts of the EM-converted to be seen*. Also the wall facing the piezo was made as much thin as possible to avoid attenuation.
+    -   Electromagnetic:
+        -   Thicker and longer electrodes which was shown by Ellouz (2017) to give better SNR. Also, they are steadier when introduced in the sand, what guarantees more precision in positioning.
+        -   A metallic support to hold the electrode comb, avoiding problems with positioning of electrodes and allowing them to be inserted as desired (Parallel/Perpendicular and deeper/shallower).
+    -   EM Acquisition-related:
+        -   An electronic card to control the electric acquisition, allowing both manual or automatic (Using SPI) measurements.
+        -   Faster automated acquisition.
+        -   Less human influence in measurements.
+-   Validationof set-up:
+    -   EM part:
+        -   Testing the card: Test the signal recorded when using the electronic card, how it looked and if there were any problems.
+            
+            As a matter of fact there were a lot of electromagnetic noise (&asymp; 85 MHz) making the whole record noisy, what could severely affect my future measurements. Thus I had to seek the source of the problem. After much inspection, we all agreed that the source was the switching regulator (*that transforms the input voltage and current to desired values*). Indeed, after properly removing it from the card, the EM noise disappeared.
 
