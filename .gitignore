@@ -6,5 +6,4 @@
 *.aux
 *.org
 tmp/
-
-
+Figures/tmp/

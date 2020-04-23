@@ -1,55 +1,58 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Report of the ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgff2e7a5)
-2.  [Presentation planning:](#org7dffd27)
-3.  [Notes:](#org62488f0)
-    1.  [Cables:](#org5b77783)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org427d6f7)
+2.  [Presentation planning:](#org59afc09)
+3.  [Notes:](#orge2d10fa)
+    1.  [Cables:](#orge2a9fc1)
+    2.  [Intro/Motivation:](#org7057eaf)
+    3.  [Experiments - What has been done:](#org32be095)
 
 
 
-<a id="orgff2e7a5"></a>
+<a id="org427d6f7"></a>
 
-# Title: <span class="underline">Report of the ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
+# Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org7dffd27"></a>
+<a id="org59afc09"></a>
 
 # Presentation planning:
 
--   Slide with introduction of SE conversion and motivation                            #:TODO
--   State-of-art experiments. Show some set-ups and what has been explored.            #:TODO
+-   Slide with introduction of SE conversion and motivation                            #:DONE
+-   State-of-art experiments. Show some set-ups and what has been explored.            #:DONE
 -   Open questions I will be focusing on:                                              #:TODO
-    -   Vary thin-layer thickness &#x2013; *What is a thin-layer*
-    -   Vary wetting fluid
-    -   Materials with different poroelastic properties (permeability/porosity/density)
-    -   Multi-electrode acquisition (Devi's work)
+    -   [ ] Vary thin-layer thickness &#x2013; *What is a thin-layer*
+    -   [ ] Vary wetting fluid
+    -   [ ] Materials with different poroelastic properties (permeability/porosity/density)
+    -   [ ] Multi-electrode acquisition (Devi's work)
 -   Questions we have ourselves and initial tests:                                     #:TODO
-    -   Reference electrode and Interface response
-    -   Common mode rejection and Interface response &#x2013; *What is Common mode rejection*
+    -   [ ] Reference electrode and Interface response
+    -   [ ] Common mode rejection and Interface response &#x2013; *What is Common mode rejection*
 -   Main topic:                                                                        #:TODO
-    -   Test multi-electrode for interface response
-    -   Parallel and perpendicular (to the layer) measurements
-    -   Change rocks (test for porosity and permeability differences)
+    -   [ ] Test multi-electrode for interface response
+    -   [ ] Parallel and perpendicular (to the layer) measurements
+    -   [ ] Change rocks (test for porosity and permeability differences)
         *Heating rock might close pores*
-    -   Change wetting fluid
+    -   [ ] Change wetting fluid
         *Encase rock in /&mu;/m plastic film to seal fluid in*
 -   Where am I at?                                                                     #:STARTED
-    -   Electric acquisition automation
-    -   Validation of new acquisition set-up
-    -   Planning
-    -   Illustrate problems encountered
-    -   Tests yet to be done (Sensitivity to layer response)
-    -   Perspectives with the new set-up
+    -   [ ] Illustrate new set-up and equipments
+    -   [X] Electric acquisition automation
+    -   [ ] Validation of new acquisition set-up
+    -   [ ] Planning
+    -   [ ] Illustrate problems encountered
+    -   [ ] Tests yet to be done (Sensitivity to layer response)
+    -   [ ] Perspectives with the new set-up
 -   Final planning                                                                     #:TODO
 
 
-<a id="org62488f0"></a>
+<a id="orge2d10fa"></a>
 
 # Notes:
 
 
-<a id="org5b77783"></a>
+<a id="orge2a9fc1"></a>
 
 ## Cables:
 
@@ -64,4 +67,58 @@
         -   SCK (SPI serial clock): Clock signal
         -   SS (Slave select): Individually select slave / Chip select
     -   Connected to GPIO pins
+
+
+<a id="org7057eaf"></a>
+
+## Intro/Motivation:
+
+-   Modelling needs more than 10 physical parameters.
+-   Interest in using SE in geophysics exploration began around 1930 with the
+    work of Thompson, suported by the growing interest in electrokinetic
+    phenomena at that time. Electro-seismics has also been investigated
+    and studied then as an alternative and complementary exploration
+    method.
+-   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
+
+
+<a id="org32be095"></a>
+
+## Experiments - What has been done:
+
+-   Many experimental works have been done in which the converted wave was identified and studied. In general, most of them try to study sensitivity to physical parameters, to different interfaces (including non-porous solids and fluids), or the validity of a proposed equation for the coupling between seismic and electromagnetic energy. Pride's equations were exhaustively chrosschecked against experiments and its exceptions where theory didn't hold were shown.
+-   I will focus on some experiments that can illustrate the main experiences realized. In general various works with different focus were realized using the same experimental set-up, thus the following were selected trying to summarize most of experimental set-ups designed.
+-   Zhu and Toksoz (2003):
+    -   Crosshole experiments with water-filled fracture to study fracture amplitude of the converted with varying fracture aperture. Also, They've shown the feasibility of inferring geometrical parameters for inclined fractures.
+    -   Seismoelectric acquisition with a cross-hole geometry containing an inclined water saturated fracture separating a Lucite block from a sandstone block, both also saturated (a). In (b) the source is fixed at position 2 in the Lucite borehole and the electrode moves from position 1 until 8 in the sandstone borehole. (c) shows the data acquired by keeping the electrode at position 2 and moving the source from 1 until 8. Amplitudes were normalized by 14 µV. From the data, a dip angle of 69.2 o was estimated for the fracture and the distance from position 1 of the source to the fracture was estimated as 4.9cm, both values close to the real ones.
+-   Chen and Mu (2005):
+    -   Uniform fine quartz sand saturated with various NaCl concentrations. And layered models satured with water, salt water and oil).
+    -   <span class="underline">For the coseismic there is a relation between conductivity and amplitude where for very low concentrations, amplitude is directly proportional to an increase in molarity</span>.
+    -   Converted EM-waves are sensitive to oil-salt water interfaces, characteristic to pretoleum reservoirs.
+    -   Experiment: Move source towards interface.
+    -   Experimental set-up for seismoelectric acquisition in (a): 1 - sand saturated with a NaCl solution (C=0.3%), 2 - lubricating oil-saturated sand layer, 3 - impervious poly(chloroethene) membrane (0.01 mm), 4 - acoustic source, 5 - receiving electrode, 6 - reference electrode and 7 - source’s moving direction. The electrodes are kept at the same position while the source can move up or down. (b) shows the data acquired by gradually moving the source 1cm downwards and (c) when moving it 2cm upwards. SE in red highlights the measured seismoelectric signal.
+-   Zhu et al. (2008):
+    -   Rock-samples immersed in a water tank (Berea sandstone and Westerly granite).
+    -   15 &#x2013; 150 kHz.
+    -   Coupling coefficient calculated supposing a capillary model.
+    -   Similar trends as a function of frequency.
+    -   Show a direct relation between the converted energy and permeability/porosity.
+    -   Configuration of seismoelectric measurements. Normalized seismoelectric coupling coefficient when the sample is, respectively, a Berea Sandstone and a Westerly Granite as well as the normalized theoretical values considering the capillary radii of 50µm (a1) and 45µm (a2) in (Berea sandstone) and of 20µm (a1) and 16µm (a2) in (Westerly granite).
+-   Schakel et al (2011):
+    -   EM amplitude versus conductivity
+    -   Discrepancy between theory and experiments increases with reduction in conductivity.
+        -   Could be related to surface conductivity other than electromigration and electroosmosis.
+        -   Scaling factor used to correct amplitude mismatch.
+    -   Experimental set-up for measuring seismoelectric signals inside a water-tank.The z-axis increases to the right and the center of the rock sample is the origin of the coordinate system. The measured (symbols) and modelled (dashed lines) electric potential peak-to-peak amplitudes are shown. The considered conductivities (in S/m) are: **1.27 e-3** (up), **1.20 e-2** (middle) and **1.01e-1** (bottom). Measurements were repeated several times to test repeatability of results. From (b), (c) and (d) one sees the fit of the modelled data gets better with increasing conductivity.
+-   Peng et al (2017):
+    -   Investigated the wedge model.
+    -   Shows experimentally that thin layers can enhance the converted wave amplitude.
+    -   Schematic of the experimental apparatus for seismoelectric measurements (a). Dimensions of the wedge model are shown in (b) while a a depiction of how measurements were realized is shown in (c). The measured interfacial EM response measured by electrodes, considering different wedge thicknesses (h) and an input signal whose wavelength (&lambda;) is about 0.9cm, is displayed in (d). In (e) the peak-to-peak amplitude of the measured electric potential is shown as a function of h and in (f) the amplitude spectra of signals. With the results a parallel to the thin layer enhancement of seismoelectric signals’ amplitude can be drawn, by noticing how the amplitudes increase when the wedge thickness goes from &asymp; 3&lambda; to &asymp; &lambda;/5.
+-   Ellouz (2017):
+    -   Started the experimental research I am conducting now through investigation of the characteristics of the converted wave due to many acquisition and geometry-related model parameters.
+        -   Thickness
+        -   Receiver/electrodes distance to interface
+        -   Excitation Frequency
+    -   For the thickness experiment, using 300kHz and &lambda; &asymp; 7mm it is not seen the thin-layer effect when reducing the thickness to values smaller than the wavelength.
+    -   It was seen that lengths down to &lambda;/6 could be identified.
 
