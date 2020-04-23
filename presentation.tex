@@ -52,7 +52,7 @@
 \graphicspath{%
   {../KitPartenairesUPPA/}% logo UPPA
   {../logos/}% misc logos
-  {Figures/} {Figures/stateofart/}}
+  {Figures/} {Figures/stateofart/} {Figures/imglabo/} {Figures/setupvalidation/}}
 
 \title{Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces}
 \date{\today} \author{Victor MARTINS GOMES \\[3mm] Daniel BRITO (PhD supervisor)
@@ -312,11 +312,64 @@
      
   \end{itemize}
 
-
 \end{frame}
 %
-\section{Our set-up}
+\section{Where am I at?}
 \subsection{General view}
+\begin{frame}{New experimental set-up}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \textbf{Acoustic-related}
+
+      \includegraphics[width=\textwidth]{newsetup.pdf}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Thorlabs equipments
+        \item Support for Piezo
+        \item Sandbox
+      \end{itemize}
+
+    \end{column}
+  \end{columns}
+\end{frame}
+%
+\begin{frame}{New experimental set-up}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \textbf{EM-related}
+
+      \includegraphics[width=\textwidth]{electrodes.pdf}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Thicker and longer electrodes
+        \item More rigid -> Better positioning
+        \item Metallic supportfor moving
+      \end{itemize}
+
+    \end{column}
+  \end{columns}
+\end{frame}
+%
+\begin{frame}{New experimental set-up}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \textbf{EM Acquisition-related}
+
+      \includegraphics[width=\textwidth]{IMG_20200224_150608.jpg}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Easily make measurements \uline{manually} or in an \uline{automated} way using SPI
+        \item Faster acquisitions
+        \item Less human influence
+      \end{itemize}
+
+    \end{column}
+  \end{columns}
+\end{frame}
+%
 \subsection{Automation}
 \begin{frame}{Automation -- general view}
   \textbf{Schema}
@@ -335,6 +388,63 @@
     \item {Towards reproductibility}
   \end{itemize}
 \end{frame}
+%
+\subsection{Validation of set-up}
+\begin{frame}{Validation}
+  {EM-related}
+  \textbf{Testing the card}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\textwidth]{Before_HFnoise_norelayopen.pdf}
+      \includegraphics[width=\textwidth]{Before_HFnoise_relayopen.pdf}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\textwidth]{Before_HFnoise_ampspec1.pdf}
+      \includegraphics[width=\textwidth]{Before_HFnoise_ampspec2.pdf}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+%
+\begin{frame}{Validation}
+  {EM-related}
+  \vspace*{-.5cm}
+  \textbf{Testing the card}
+
+  \vspace*{2.5cm}
+  \hspace*{3cm}
+  \includegraphics[width=0.8\textwidth]{alimentationcircuit.png}
+
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.7\textwidth]{converter.jpg}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Problem in switching regulator
+        \item Solution: remove it
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %%%%
 \begin{frame}{Automation Planning}
   \textbf{From: 2020-01-30 until 2020-03-13}
