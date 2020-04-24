@@ -44,6 +44,9 @@
 
 \usepackage{pgfgantt} % Gantt charts - for planning
 
+\setbeamerfont{section in toc}{size=\normalsize}
+\setbeamerfont{subsection in toc}{size=\small}
+
 \setbeamercovered{transparent} % For transparency effects with overlay commands
 %
 %
@@ -54,13 +57,18 @@
   {../logos/}% misc logos
   {Figures/} {Figures/stateofart/} {Figures/imglabo/} {Figures/setupvalidation/}}
 
-\title{Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces}
+\title{ \vspace*{-1cm} Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces}
 \date{\today} \author{Victor MARTINS GOMES \\[3mm] Daniel BRITO (PhD supervisor)
   \\ \and H\'{e}l\`{e}ne BARUCQ (PhD co-supervisor)}
 \begin{document}
 \begin{frame}
   \titlepage
 \end{frame}
+%
+\begin{frame}{Overview}
+  \tableofcontents
+\end{frame}
+
 %
 \section{Introduction}
 
@@ -313,6 +321,78 @@
   \end{itemize}
 
 \end{frame}
+%
+\section{Open questions I will focus}
+\subsection{Known questions}
+\begin{frame}{Open questions}
+  {\textbf{Thin-layers}}
+  \begin{center}
+  \begin{itemize}
+    \item Extend what was experimentally done in Schakel et al. (2012), Peng et al. (2017) and Ellouz (2017)
+    \item {Change in thickness and physical properties:
+      \begin{itemize}
+        \item Wetting fluid/Salinity
+        \item Permeability/Porosity
+      \end{itemize}
+      }
+      \item Try to keep up with numerical studies (Grobbe et al., 2016)
+  \end{itemize}
+
+  \rule{\textwidth}{1pt}
+
+  \textbf{Thin-layers}: those smaller than the wavelength
+  \end{center}
+\end{frame}
+%
+\begin{frame}{Open questions}
+  {\textbf{Multi-electrode arrangement}}
+
+  \begin{itemize}
+    \item Devi (2017)
+      \item 3 and 5-electrodes configuration to reduce noise and amplify EM-waves
+  \end{itemize}
+
+  \vspace*{4cm}
+  \includegraphics[width=0.9\textwidth]{Devimultielectrode.png}
+\end{frame}
+
+\subsection{Questions we have ourselves}
+\begin{frame}{Open questions}
+  {\textbf{Questions we have ourselves}}
+
+  \begin{block}{\small Reference electrode}
+
+    \vspace*{1.75cm}
+    \includegraphics[width=0.9\textwidth]{ref_electrode_config.png}
+
+    \tiny{Ellouz (2017)}
+  \end{block}
+  \begin{block}{\small Differential amplifier -- Common mode rejection ratio}
+
+    \includegraphics[width=0.5\textwidth]{cmrr.png}
+  \end{block}
+\end{frame}
+
+%
+\section{Experiments to be conducted}
+\begin{frame}{Experiments to be conducted}
+  \begin{itemize}
+    \item {Test:
+      \begin{itemize}
+        \item Reference electrode (which configuration, are there improvements?, etc.)
+        \item Common mode rejection (does it improve our signal? Is it worthy to use it?)
+        \item Multi-electrode configuration
+      \end{itemize}
+
+      }
+    \item Parallel and perpendicular (to layer) measurements
+    \item Change rocks /rock properties (heating to change porosity?)
+    \item Change wetting fluid ($\mu$m plastic to seal fluid in?)
+  \end{itemize}
+
+\end{frame}
+%
+
 %
 \section{Where am I at?}
 \subsection{General view}

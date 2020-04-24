@@ -1,41 +1,43 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgf283b5d)
-2.  [Presentation planning:](#org1a4cc24)
-3.  [Notes:](#orge1a899b)
-    1.  [Cables:](#orgcd8d24c)
-    2.  [Intro/Motivation:](#org3af7dc8)
-    3.  [Experiments - What has been done:](#org113f301)
-    4.  [Where am I at?](#org5500663)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgbfb6653)
+2.  [Presentation planning:](#orge3d776c)
+3.  [Notes:](#org1e073cf)
+    1.  [Cables:](#org23bf793)
+    2.  [Open questions I will be focusing on](#org20f87e6)
+    3.  [Experiments to be conducted:](#org42c3bd3)
+    4.  [Intro/Motivation:](#org61f52f1)
+    5.  [Experiments - What has been done:](#org19effa4)
+    6.  [Where am I at?](#orga81c373)
 
 
 
-<a id="orgf283b5d"></a>
+<a id="orgbfb6653"></a>
 
 # Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org1a4cc24"></a>
+<a id="orge3d776c"></a>
 
 # Presentation planning:
 
 -   Slide with introduction of SE conversion and motivation                            #:DONE
 -   State-of-art experiments. Show some set-ups and what has been explored.            #:DONE
--   Open questions I will be focusing on:                                              #:TODO
-    -   [ ] Vary thin-layer thickness &#x2013; *What is a thin-layer*
-    -   [ ] Vary wetting fluid
-    -   [ ] Materials with different poroelastic properties (permeability/porosity/density)
-    -   [ ] Multi-electrode acquisition (Devi's work)
--   Questions we have ourselves and initial tests:                                     #:TODO
-    -   [ ] Reference electrode and Interface response
-    -   [ ] Common mode rejection and Interface response &#x2013; *What is Common mode rejection*
--   Main topic:                                                                        #:TODO
-    -   [ ] Test multi-electrode for interface response
-    -   [ ] Parallel and perpendicular (to the layer) measurements
-    -   [ ] Change rocks (test for porosity and permeability differences)
+-   Open questions I will be focusing on:                                              #:DONE
+    -   [X] Vary thin-layer thickness &#x2013; *What is a thin-layer*
+    -   [X] Vary wetting fluid
+    -   [X] Materials with different poroelastic properties (permeability/porosity/density)
+    -   [X] Multi-electrode acquisition (Devi's work)
+    -   Questions we have ourselves and initial tests:                                   #:DONE
+        -   [X] Reference electrode and Interface response
+        -   [X] Common mode rejection and Interface response &#x2013;
+            *What is Common mode rejection*
+-   Experiments to be conducted                                                        #:DONE
+    -   [X] Parallel and perpendicular (to the layer) measurements
+    -   [X] Change rocks (test for porosity and permeability differences)
         *Heating rock might close pores*
-    -   [ ] Change wetting fluid
+    -   [X] Change wetting fluid
         *Encase rock in /&mu;/m plastic film to seal fluid in*
 -   Where am I at?                                                                     #:DONE
     -   [X] Illustrate new set-up and equipments
@@ -48,12 +50,12 @@
 -   Final planning                                                                     #:TODO
 
 
-<a id="orge1a899b"></a>
+<a id="org1e073cf"></a>
 
 # Notes:
 
 
-<a id="orgcd8d24c"></a>
+<a id="org23bf793"></a>
 
 ## Cables:
 
@@ -70,7 +72,28 @@
     -   Connected to GPIO pins
 
 
-<a id="org3af7dc8"></a>
+<a id="org20f87e6"></a>
+
+## Open questions I will be focusing on
+
+-   Thin-layers: Following the experimental works of Schakel et al. (2012), Peng et al. (2017) and Ellouz et al (2017), I will tackle this problem by analyzing both the change in thickness and of physical properties (like wetting fluid, permeability and porosity). Numerically this effect, characterized as an amplitude increase, has been studied and observed in many works, like Grobbe and Slob (2016) and Haartsen and Pride (1997). Experimentally it seems there is still a long way to go until some appropriate model for this effect can be proposed.
+
+-   Questions we have ourselves:
+    -   Reference electrode: Which configuration could improve our acquisition.
+    -   Common-mode rejection: There are two main causes of common-mode noise, (1) generated in wires and cables due to electromagnetic induction and (2) bad grounding (current flowing into the ground of one circuit to the other). Differential amplifiers are designed to suppres this noise while keeping the signal.
+
+
+<a id="org42c3bd3"></a>
+
+## Experiments to be conducted:
+
+-   Test reference electrode configuration like it was done in Ellouz for the coseismic, analyzing the configurations used in previous works, like Bordes et al. (2015).
+-   Measurements parallel and perpendicular to the layer used to characterize the converted wave. To create amplitude contour maps, etc.
+-   Change rocks for porosity and permeability. It might be possible, and needs discussion, that heating could lead to porous to close. Like that a rock not so different than the original can be used, guaranteeing that not so many physical parameter were changed.
+-   Change wetting fluid/salinity. Encasing the saturated rock in a plastic film could help seal the fluid in before inserting the layer into the media. It is still to be seen what kind of plastic could be that resistent.
+
+
+<a id="org61f52f1"></a>
 
 ## Intro/Motivation:
 
@@ -83,7 +106,7 @@
 -   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
 
 
-<a id="org113f301"></a>
+<a id="org19effa4"></a>
 
 ## Experiments - What has been done:
 
@@ -124,7 +147,7 @@
     -   It was seen that lengths down to &lambda;/6 could be identified.
 
 
-<a id="org5500663"></a>
+<a id="orga81c373"></a>
 
 ## Where am I at?
 
