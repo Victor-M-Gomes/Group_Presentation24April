@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgbfb6653)
-2.  [Presentation planning:](#orge3d776c)
-3.  [Notes:](#org1e073cf)
-    1.  [Cables:](#org23bf793)
-    2.  [Open questions I will be focusing on](#org20f87e6)
-    3.  [Experiments to be conducted:](#org42c3bd3)
-    4.  [Intro/Motivation:](#org61f52f1)
-    5.  [Experiments - What has been done:](#org19effa4)
-    6.  [Where am I at?](#orga81c373)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#orgfd01c4e)
+2.  [Presentation planning:](#org844bed1)
+3.  [Notes:](#org33d7cbf)
+    1.  [Cables:](#orgee26373)
+    2.  [Open questions I will be focusing on](#org97d4281)
+    3.  [Experiments to be conducted:](#orgd7da7f4)
+    4.  [Intro/Motivation:](#org1242328)
+    5.  [Experiments - What has been done:](#orge737dfc)
+    6.  [Where am I at?](#orgdde5fa5)
 
 
 
-<a id="orgbfb6653"></a>
+<a id="orgfd01c4e"></a>
 
 # Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="orge3d776c"></a>
+<a id="org844bed1"></a>
 
 # Presentation planning:
 
@@ -48,14 +48,31 @@
     -   [X] Tests yet to be done (Sensitivity to layer response)
     -   [X] Perspectives with the new set-up
 -   Final planning                                                                     #:TODO
+    -   Automation
+    -   Tests and Validation
+        -   Electrodes
+        -   Comp. w/ Ellouz
+    -   Main topic
+        -   Common mode rejection ratio (*Differential amplifier*)
+        -   Reference electrode
+        -   Multi-electrode (*after Devi's work*)
+        -   First set of experiments following Ellouz (2017)
+        -   Thickness experiment (more thicknesses than before)
+        -   Change properties:
+            -   Wetting fluid
+            -   Porosity/Permeability
+        -   Data analysis
+            -   Processing
+            -   Modelling for comparison
+    -   Thesis redaction
 
 
-<a id="org1e073cf"></a>
+<a id="org33d7cbf"></a>
 
 # Notes:
 
 
-<a id="org23bf793"></a>
+<a id="orgee26373"></a>
 
 ## Cables:
 
@@ -72,7 +89,7 @@
     -   Connected to GPIO pins
 
 
-<a id="org20f87e6"></a>
+<a id="org97d4281"></a>
 
 ## Open questions I will be focusing on
 
@@ -83,7 +100,7 @@
     -   Common-mode rejection: There are two main causes of common-mode noise, (1) generated in wires and cables due to electromagnetic induction and (2) bad grounding (current flowing into the ground of one circuit to the other). Differential amplifiers are designed to suppres this noise while keeping the signal.
 
 
-<a id="org42c3bd3"></a>
+<a id="orgd7da7f4"></a>
 
 ## Experiments to be conducted:
 
@@ -93,7 +110,7 @@
 -   Change wetting fluid/salinity. Encasing the saturated rock in a plastic film could help seal the fluid in before inserting the layer into the media. It is still to be seen what kind of plastic could be that resistent.
 
 
-<a id="org61f52f1"></a>
+<a id="org1242328"></a>
 
 ## Intro/Motivation:
 
@@ -106,7 +123,7 @@
 -   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
 
 
-<a id="org19effa4"></a>
+<a id="orge737dfc"></a>
 
 ## Experiments - What has been done:
 
@@ -147,7 +164,7 @@
     -   It was seen that lengths down to &lambda;/6 could be identified.
 
 
-<a id="orga81c373"></a>
+<a id="orgdde5fa5"></a>
 
 ## Where am I at?
 

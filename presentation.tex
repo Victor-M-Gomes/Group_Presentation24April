@@ -689,6 +689,69 @@
 
  \visible<2>{\textbf{In the end: A robust and easily reproducible seismoelectric experiment.}}
 \end{frame}
+%
+\begin{frame}{Automation and validation Planning}
+  \textbf{Today}
+
+  \vspace*{0.5cm}
+  \hspace*{-0.5cm}
+  \resizebox{11.5cm}{!}{
+	\begin{ganttchart}[ x unit=0.45cm, y unit title=0.7cm, y unit chart=0.9cm,
+      vgrid={draw=none, dotted}, time slot format=isodate, time slot unit=day,
+      calendar week text = {W\currentweek{}}, title/.append style={draw=none,
+        fill=RoyalBlue!50!black}, title label font=
+      \sffamily\bfseries\Large\color{white}, title label node/.append
+      style={below=-1.6ex}, title left shift=.05, title right shift=-.05, title
+      height=1, bar/.append style={draw=none, fill=OliveGreen!75}, bar
+      height=.6, bar label font=\Large\color{black!80}, group right shift=0,
+      group top shift=.6, group height=.3, group peaks height=.2, group label
+      font=\sffamily\bfseries\LARGE\color{black}, bar incomplete/.append
+      style={fill=Burgundy}, bar progress label font=\Large\color{Black}, group
+      progress label font=\Large\color{Black}, milestone progress label
+      font=\Large\color{Black}, milestone label font=\Large\color{Blue}, bar
+      progress label font=\Large\color{Black}, progress=today, today=2020-04-24
+      ]{2020-04-24}{2020-07-31}
+      \gantttitlecalendar{year, month=name, week} \\
+      \ganttbar[ bar progress label font=\Large\color{OliveGreen!75}, bar
+      progress label node/.append style={right=4pt}, progress=10, bar label
+      font=\LARGE\color{OliveGreen}, name=pp
+      ]{Thesis redaction}{2020-04-24}{2020-07-31} \\
+      \ganttset{link/.style={black, thick, -to}} \ganttbar[name=osc,
+      progress=90]{Automation}{2020-04-24}{2020-05-20} \\
+      \ganttlinkedbar[name=eletr,
+      progress=50]{Electrodes}{2020-04-24}{2020-05-16}\\
+      \ganttbar[name=tav,
+      progress=85]{Tests and vali.}{2020-05-11}{2020-06-03} \\
+      \ganttlinkedbar[name=eletr,
+      progress=50]{Electrodes}{2020-05-11}{2020-05-16}\\
+      \ganttlinkedbar[name=CompE,
+      progress=20]{Comp w/ Ellouz data}{2020-05-11}{2020-06-03}\\
+      \ganttbar[name=main,
+      progress=0]{Main topic}{2020-06-01}{2020-07-31} \\
+      \ganttlinkedbar[name=cmrr,
+      progress=0]{Differential amplifier}{2020-06-01}{2020-06-12}\\
+      \ganttlinkedbar[name=rfelc,
+      progress=0]{Ref. electrodes}{2020-06-01}{2020-06-12}\\
+      \ganttlinkedbar[name=mfelc,
+      progress=0]{Mult. electrodes}{2020-06-01}{2020-06-12}\\
+      \ganttlinkedbar[name=firstexp,
+      progress=0]{Exp. after Ellouz}{2020-06-09}{2020-06-26}\\
+      \ganttlinkedbar[name=thick,
+      progress=0]{Layer thickness}{2020-06-29}{2020-07-03}\\
+      \ganttlinkedbar[name=wet,
+      progress=0]{Wetting fluid}{2020-07-06}{2020-07-10}\\
+      \ganttlinkedbar[name=porper,
+      progress=0]{Change rock}{2020-07-13}{2020-07-17}\\
+      \ganttbar[name=expp,
+      progress=0]{Experimental planning}{2020-06-01}{2020-07-31} \\
+      \ganttbar[name=dat,
+      progress=0]{Data analysis}{2020-06-01}{2020-07-31} \\
+
+	\end{ganttchart}
+  }
+
+\end{frame}%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
   %%%%%%%%%%%%%%%%%%%%%%%
