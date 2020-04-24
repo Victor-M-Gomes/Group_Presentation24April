@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org1a2829f)
-2.  [Presentation planning:](#org83314eb)
-3.  [Notes:](#org1bb8e11)
-    1.  [Cables:](#org25f9e2b)
-    2.  [Intro/Motivation:](#org9d34624)
-    3.  [Open questions I will be focusing on](#orge8cf61f)
-    4.  [Experiments to be conducted:](#orgc5e6cf2)
-    5.  [Experiments - What has been done:](#orgb00b30b)
-    6.  [Where am I at?](#org1bbf83f)
+1.  [Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>](#org0f422ad)
+2.  [Presentation planning:](#orgcacd24e)
+3.  [Notes:](#orgd70a8ae)
+    1.  [Cables:](#org2b5cf0e)
+    2.  [Intro/Motivation:](#org6e3a97b)
+    3.  [Open questions I will be focusing on](#orgb914cfe)
+    4.  [Experiments to be conducted:](#orgd8bf287)
+    5.  [Experiments - What has been done:](#org9d0ec31)
+    6.  [Where am I at?](#org4fa3dce)
 
 
 
-<a id="org1a2829f"></a>
+<a id="org0f422ad"></a>
 
 # Title: <span class="underline">Thesis Report of the: Ongoing experimental research on seismo-electromagnetic fields generated at saturated porous media interfaces</span>
 
 
-<a id="org83314eb"></a>
+<a id="orgcacd24e"></a>
 
 # Presentation planning:
 
@@ -67,12 +67,12 @@
     -   Thesis redaction
 
 
-<a id="org1bb8e11"></a>
+<a id="orgd70a8ae"></a>
 
 # Notes:
 
 
-<a id="org25f9e2b"></a>
+<a id="org2b5cf0e"></a>
 
 ## Cables:
 
@@ -89,7 +89,7 @@
     -   Connected to GPIO pins
 
 
-<a id="org9d34624"></a>
+<a id="org6e3a97b"></a>
 
 ## Intro/Motivation:
 
@@ -102,7 +102,7 @@
 -   Image: Comparison of very high resolution seismic (a) and seismoelectric (b) composite shot gathers acquired using a shotgun seismic source and gently bandpass filtered from 200 to 800 Hz. Traces within each record are plotted at true relative amplitudes. Timing lines are 10 ms apart and offsets range from -60 to +51 m (-71 to +88 m for the seismic) with a trace spacing of 1.5 m. Panel (c) is a single-sided shot composite shot gather formed by stacking traces at corresponding positive and negative offsets in (b). Numbers indicate (1) direct P-wave, (2) P-wave reflected from bedrock, (3) P-wave refraction from bedrock, and (4) a possible interfacial seismoelectric effect from bedrock. Note the broader bandwidth and earlier arrival of the bedrock reflection in the seismoelectric record.
 
 
-<a id="orge8cf61f"></a>
+<a id="orgb914cfe"></a>
 
 ## Open questions I will be focusing on
 
@@ -113,7 +113,7 @@
     -   Common-mode rejection: There are two main causes of common-mode noise, (1) generated in wires and cables due to electromagnetic induction and (2) bad grounding (current flowing into the ground of one circuit to the other). Differential amplifiers are designed to suppres this noise while keeping the signal.
 
 
-<a id="orgc5e6cf2"></a>
+<a id="orgd8bf287"></a>
 
 ## Experiments to be conducted:
 
@@ -123,7 +123,7 @@
 -   Change wetting fluid/salinity. Encasing the saturated rock in a plastic film could help seal the fluid in before inserting the layer into the media. It is still to be seen what kind of plastic could be that resistent.
 
 
-<a id="orgb00b30b"></a>
+<a id="org9d0ec31"></a>
 
 ## Experiments - What has been done:
 
@@ -164,7 +164,7 @@
     -   It was seen that lengths down to &lambda;/6 could be identified.
 
 
-<a id="org1bbf83f"></a>
+<a id="org4fa3dce"></a>
 
 ## Where am I at?
 
